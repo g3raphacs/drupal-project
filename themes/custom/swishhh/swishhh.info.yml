@@ -1,0 +1,9 @@
+name: swishhh
+description: Theme blog NBA
+core: 8.x
+type: theme
+
+regions:
+  header: 'header'
+  content: 'content'
+  footer: 'footer'

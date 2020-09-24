@@ -1,4 +1,4 @@
-//burger
+// burger
 const burger = document.getElementById('nav-burger');
 let burgerState = 0;
 

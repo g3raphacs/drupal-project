@@ -6,11 +6,17 @@ screenshot: swishhh.png
 
 regions:
   header: 'Header'
+  swishhhmenu: 'Navigation'
   content: 'Content'
   sidebar_first: 'Sidebar First'
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+stylesheets-remove:
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
 
 libraries:
   - swishhh/global-css

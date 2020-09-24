@@ -1,0 +1,34 @@
+swishhh.xlarge:
+  label: XLarge
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+
+swishhh.large:
+  label: Large
+  mediaQuery: 'max-width: 1199.98px'
+  weight: 1
+  multipliers:
+    - 1x
+
+swishhh.medium:
+  label: Medium
+  mediaQuery: 'max-width: 991.98px'
+  weight: 2
+  multipliers:
+    - 1x
+
+swishhh.small:
+  label: Small
+  mediaQuery: 'max-width: 797.98px'
+  weight: 2
+  multipliers:
+    - 1x
+
+swishhh.xsmall:
+  label: XSmall
+  mediaQuery: 'max-width: 575.98px'
+  weight: 2
+  multipliers:
+    - 1x

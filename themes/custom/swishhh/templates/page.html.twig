@@ -44,7 +44,7 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
+  <header id="main-header" role="banner">
 <!-- navbar  -->
     <div id="navbar-topbar" class="flex-spaceb bck-sec">
         <div id="navbar-left" class="flex">
@@ -85,11 +85,9 @@
             </div>
         </div>
     </div>
-    <div id="navbar-bottombar" class="flex-spaceb bck-white">
+    <div id="navbar-bottombar" class="">
         {% if page.swishhhmenu %}
-          <div id="swishhhmenu" class="content">
           {{ page.swishhhmenu }}
-          </div>
         {% endif %}
     </div>
   </header>

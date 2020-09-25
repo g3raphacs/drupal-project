@@ -101,14 +101,16 @@
             ul{
                 margin: 0;
                 display: flex;
+                justify-content: space-around;
                 align-items: center;
                 width: 100%;
                 li.menu-item a{
+                    text-transform: uppercase;
                     font-family: $font-sec;
                     @extend %f-18;
                     font-weight: 500;
                     display: block;
-                    padding: 6px 10px 6px 10px;
+                    padding: 6px 20px 4px 20px;
                     border-bottom: 4px solid white;
                     &.is-active{
                         border-bottom: 4px solid #231f20;

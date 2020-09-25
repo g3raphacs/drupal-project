@@ -321,14 +321,16 @@ button {
 #main-header #navbar-bottombar #block-swishhh-main-menu ul {
   margin: 0;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 #main-header #navbar-bottombar #block-swishhh-main-menu ul li.menu-item a {
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   display: block;
-  padding: 6px 10px 6px 10px;
+  padding: 6px 20px 4px 20px;
   border-bottom: 4px solid white;
 }
 #main-header #navbar-bottombar #block-swishhh-main-menu ul li.menu-item a.is-active {

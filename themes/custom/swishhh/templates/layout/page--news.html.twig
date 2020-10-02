@@ -61,9 +61,9 @@
     <div class="layout-content container flex">
         <div class="jee-content">
             {{ page.content }}
-            {{ kint(page.content) }}
         </div>
         <div class="jee-sidebar">
+            {{ dump(page) }}
             {{ page.sidebar_first }}
         </div>
 

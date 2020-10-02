@@ -1,0 +1,78 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+
+{% block content %}
+	<!-- navbar  -->
+	<div id="navbar-topbar" class="flex-spaceb bck-sec">
+		<div id="navbar-left" class="flex">
+			<!-- logo -->
+
+			{% if content['field_afficher_logo']['#items'].value == '1' %}
+				{{ content['field_logo'] }}
+			{% endif %}
+			<!-- Social Buttons -->
+			{% if content['field_afficher_social']['#items'].value == '1' %}
+			<div id="navbar-social" class="flex-spaceb">
+				{% if content['field_lien_facebook']['#items'].uri != '' %}
+				<div id="social1-facebook">
+					<a href="{{ content['field_lien_facebook']['#items'].uri }}" target="_blank" rel="noopener" >
+						<img src="{{ directory }}/img/soc-facebook-1-1.svg" alt="Facebook social button" width="33.902px" height="33.765px">
+						<img src="{{ directory }}/img/soc-facebook-1-2.svg" alt="Facebook social button" width="33.902px" height="33.765px">
+					</a>
+				</div>
+				{% endif %}
+				{% if content['field_lien_twitter']['#items'].uri != '' %}
+				<div id="social1-twitter">
+					<a href="{{ content['field_lien_twitter']['#items'].uri }}" target="_blank" rel="noopener" >
+						<img src="{{ directory }}/img/soc-twitter-1-1.svg" alt="Twitter social button" width="33.902px" height="33.765px">
+						<img src="{{ directory }}/img/soc-twitter-1-2.svg" alt="Twitter social button" width="33.902px" height="33.765px">
+					</a>
+				</div>
+				{% endif %}
+				{% if content['field_lien_instagram']['#items'].uri != '' %}
+				<div id="social1-insta">
+					<a href="{{ content['field_lien_instagram']['#items'].uri }}" target="_blank" rel="noopener" >
+						<img src="{{ directory }}/img/soc-insta-1-1.svg" alt="Instagram social button" width="33.902px" height="33.765px">
+						<img src="{{ directory }}/img/soc-insta-1-2.svg" alt="Instagram social button" width="33.902px" height="33.765px">
+					</a>
+				</div>
+				{% endif %}
+				{% if content['field_lien_youtube']['#items'].uri != '' %}
+				<div id="social1-youtube">
+					<a href="{{ content['field_lien_youtube']['#items'].uri }}" target="_blank" rel="noopener" >
+						<img src="{{ directory }}/img/soc-youtube-1-1.svg" alt="Youtube social button" width="33.902px" height="33.765px">
+						<img src="{{ directory }}/img/soc-youtube-1-2.svg" alt="Youtube social button" width="33.902px" height="33.765px">
+					</a>
+				</div>
+				{% endif %}
+			</div>
+			{% endif %}
+		</div>
+		<div id="navbar-right" class="flex">
+			<div id="search-icon" class="f-27 txt-white las la-search"></div>
+			<div id="nav-burger" class="closed">
+				<div id="nav-burger-closed">
+					<img src="{{ directory }}/img/burger1.svg" alt="Facebook scoial button" width="101px" height="45px">
+					<img src="{{ directory }}/img/burger2.svg" alt="Facebook scoial button" width="101px" height="45px">
+				</div>
+				<div id="nav-burger-opened">
+					<img src="{{ directory }}/img/burger1x.svg" alt="Facebook scoial button" width="101px" height="45px">
+					<img src="{{ directory }}/img/burger2x.svg" alt="Facebook scoial button" width="101px" height="45px">
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

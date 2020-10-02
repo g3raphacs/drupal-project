@@ -336,5 +336,15 @@ button {
 #main-header #navbar-bottombar #block-swishhh-main-menu ul li.menu-item a.is-active {
   border-bottom: 4px solid #231f20;
 }
+.jee-sidebar {
+  min-width: 300px;
+  max-width: 350px;
+  background-color: lightsalmon;
+  padding: 0 10px;
+}
+
+.jee-content {
+  padding-right: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */

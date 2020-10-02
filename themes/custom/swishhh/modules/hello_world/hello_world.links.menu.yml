@@ -1,0 +1,7 @@
+hello_world.hello_world:
+  title: Hello World
+  description: 'Access the hello world page.'
+  route_name: hello_world.hello_world
+  menu_name: main
+  # parent: nomDuParent
+  # weight: 1

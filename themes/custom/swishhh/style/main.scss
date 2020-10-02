@@ -6,3 +6,14 @@
 
 
 @import 'modules/_responsive.scss';
+
+.jee-sidebar{
+    min-width: 300px;
+    max-width: 350px;
+    background-color: lightsalmon;
+    padding:0 10px;
+}
+
+.jee-content{
+    padding-right:10px;
+}
